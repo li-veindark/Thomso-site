@@ -2,6 +2,10 @@
   padding: 2em;
 }
 
+.container-fluid img{
+  margin-left: 3em;
+}
+
 .section1 {
   background-image: url("images/box1.png");
   background-size: 100%;
@@ -9,8 +13,7 @@
   text-align: center;
   color: #f7f7f7;
   padding-top: 6em;
-  padding-bottom: 10em;
-  margin-bottom: 40em;
+  padding-bottom: 8em;
 }
 
 .section1 h3 {
@@ -40,16 +43,30 @@
 
 }
 
-.btn3 {
-  background-color: #FA4A0C;
-  border-radius: 40px;
+.btn-danger
+{
+    background-color: #FA4A0C;
 }
 
-.btn2 {
-  width: 50em;
-  border-radius: 40px;
-  margin-right: 10px;
-  margin-left: 30px;
+.btn-lg{
+    border-radius: 30px;
+    width: 180px;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.btn{
+  width: 199px;
+  height: 64px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+  
+  letter-spacing: 0.1px;
 }
 
 .section1 h1 {
@@ -95,25 +112,26 @@
 
 
 
-.mid-section {
-  position: absolute;
+.mid-section
+{
+  /* position: relative;
   top: 30em;
-  z-index: 1;
+  z-index: 1; */
+  text-align: center;
 }
 
-.phone1 {
-  background: transparent;
+.phone1
+{
+  background : transparent;
   object-fit: none;
-  position: absolute;
   z-index: 1;
-  left: 23em;
-
+  margin-top: -17em;
+  margin-left: -9em;
 }
-
-.phone2 {
-  position: relative;
-  top: 15em;
-  left: 46em;
+.phone2
+{
+  margin-left: -16.1em;
+  margin-top: -12em;
 }
 
 
@@ -133,7 +151,7 @@
   text-align: center;
 }
 
-.container-fluid img {
+.foot{
   position: relative;
   left: 8em;
   bottom: 0.5em;
@@ -211,14 +229,8 @@
 
 }
 
-.btn {
-  width: 142px;
-  height: 64px;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  margin-left: 0.5em;
 
-}
+
 
 /* section-4 - Part2 ////////////////////////////////////////////////////////*/
 
@@ -355,12 +367,17 @@
 
   }
 
-  .container-fluid img {
+  /* .container-fluid .foot{
+    display: none;
+    width: auto;
+  } */
+
+  footer .container-fluid img {
     display: none;
 
   }
 
-  .container-fluid {
+  footer .container-fluid {
     width: auto;
   }
 
@@ -457,25 +474,34 @@
     margin-bottom: 2em;
   } 
 
+  .section1{
+    background-image: none;
+    background-color: #FAFAFA;
+  }
+
+  .section1 h3{
+    color: #737373;
+  }
+
+  .section1 h1{
+    color: #252B42;
+  }
+
+  .section1 h2{
+    color: #737373;
+  }
+
+  .section1 .btn-outline-light{
+    border-color: #FA4A0C;
+    color: #FA4A0C;
+  }
 
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 960px)
+{
+    .section1 button{
+      width: 80%;
+    }
 }
